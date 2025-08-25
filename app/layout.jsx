@@ -12,11 +12,11 @@ export const metadata = {
   openGraph: {
     title: 'Satyam Baranwal | Portfolio',
     description: 'Check out my work, projects, and experience as a Next.js Developer.',
-    url: 'https://satyam-portfolio.com',
+    url: 'https://satyam-portfolio-beta.vercel.app',
     siteName: 'Satyam Portfolio',
     images: [
       {
-        url: 'https://satyam-portfolio.com/og-image.jpg',
+        url: 'https://satyam-portfolio-beta.vercel.app/android-chrome-512x512.png',
         width: 1200,
         height: 630,
         alt: 'Satyam Portfolio',
@@ -28,7 +28,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Satyam Baranwal | Portfolio',
     description: 'Portfolio of Satyam Baranwal, a Next.js Full-Stack Developer.',
-    images: ['https://satyam-portfolio.com/og-image.jpg'],
+    images: ['https://satyam-portfolio-beta.vercel.app/apple-touch-icon.png'],
   },
   icons: {
     icon: '/favicon.ico',
