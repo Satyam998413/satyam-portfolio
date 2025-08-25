@@ -50,7 +50,7 @@ export const experiences = [
 
 export const educations = [
   {
-    course: "Bachelor of Technology",
+    course: "Bachelor of Technology (B.Tech)",
     institute: "M.G. Institute of Management and Technology (AKTU) (2018-2022)",
   },
   {
@@ -58,7 +58,7 @@ export const educations = [
     institute: "Akhilesh Inter College (2017-2018)",
   },
   {
-    course: "HighSchool",
+    course: "Secondary School Certificate (SSC)",
     institute: "Akhilesh Inter College (2015-2016)",
   },
 ];
