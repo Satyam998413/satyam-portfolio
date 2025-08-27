@@ -72,9 +72,16 @@ export const projects = [
   },
   {
     title: "Medikosh E-Commerce Website-(FreeLancing Work For Client)",
-    description: "Real-time e-commerce website for medicine and more products sales like that amazon & flipkart.",
+    description: "Real-time e-commerce website for medicine and more products sales like that amazon & flipkart (As BackEnd Developer with my team).",
     image:icons.medikosh,
     link: "https://www.medikosh.com/", // Replace with your project URL
+  },
+
+  {
+    title: "SneakyLinks Dating Website-(FreeLancing Work For US Client)",
+    description: "Real-time dating website for two person communication (As BackEnd Developer with my team).",
+    image:icons.sneakylinks,
+    link: "https://www.sneakylinks.com/", // Replace with your project URL
   },
 
   {
