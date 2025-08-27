@@ -13,22 +13,22 @@ export const personalDetails = {
 
 export const skills = [
   { name: "AI (ChatGpt , Github Copilot , Cursor Agentic AI)", level: 80 },
-  { name: "React", level: 95 },
-  { name: "Node.js", level: 95 },
-  { name: "MongoDB", level: 95 },
-  { name: "Express.js", level: 95 },
-  { name: "Javascript", level: 95 },
-  { name: "Tailwind CSS", level: 92 },
-  { name: "Next.js", level: 70 },
-  { name: "HTML5", level: 95 },
-  { name: "CSS3", level: 95 },
-  { name: "JQuery", level: 95 },
-  { name: "REST API", level: 95 },
-  { name: "MQTT", level: 95 },
-  { name: "Git", level: 95 },
+  { name: "React", level: 80 },
+  { name: "Node.js", level: 80 },
+  { name: "MongoDB", level: 80 },
+  { name: "Express.js", level: 80 },
+  { name: "Javascript", level: 80 },
+  { name: "Tailwind CSS", level: 80 },
+  { name: "Next.js", level: 60 },
+  { name: "HTML5", level: 90 },
+  { name: "CSS3", level: 90 },
+  { name: "JQuery", level: 90 },
+  { name: "REST API", level: 90 },
+  { name: "MQTT", level: 90 },
+  { name: "Git", level: 90 },
   { name: "Docker", level: 70 },
-  { name: "AWS (EC2, S3 bucket, Load Balancer)", level: 70 },
-  { name: "CI-CD Pipeline (Vercel, GitLab with Agile Method)", level: 80 },
+  { name: "AWS (EC2, S3 bucket, Load Balancer)", level: 60 },
+  { name: "CI-CD Pipeline (Vercel, GitLab with Agile Method)", level: 70 },
   { name: "Python", level: 70 },
   { name: "Django", level: 70 },
 ];
@@ -64,6 +64,12 @@ export const educations = [
 ];
 
 export const projects = [
+  {
+    title: "Cremen-Engineers E-Commerce Website (Python & Django Based)",
+    description: "Real-time e-commerce website for blogs upload , game templates upload , courses sale & for my personal use.",
+    image:icons.resonent,
+    link: "#", // Replace with your project URL
+  },
   {
     title: "LMS - Loom Monitoring System",
     description: "Real-time monitoring system for looms using IoT and MQTT.",
