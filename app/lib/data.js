@@ -71,14 +71,21 @@ export const projects = [
     link: "#", // Replace with your project URL
   },
   {
+    title: "Medikosh E-Commerce Website-(FreeLancing Work For Client)",
+    description: "Real-time e-commerce website for medicine and more products sales like that amazon & flipkart.",
+    image:icons.medikosh,
+    link: "https://www.medikosh.com/", // Replace with your project URL
+  },
+
+  {
     title: "LMS - Loom Monitoring System",
-    description: "Real-time monitoring system for looms using IoT and MQTT.",
+    description: "Real-time monitoring system for looms (JCard Machines) using IoT and MQTT.",
     image:icons.lms,
     link: "https://loomsmonitor.resonent.com/", // Replace with your project URL
   },
   {
     title: "WDS - Weaving Data-Logger System",
-    description: "Real-time monitoring system for looms using IoT and MQTT.",
+    description: "Real-time monitoring system for any machine which is working (based on RPM production) using IoT and MQTT.",
     image:icons.wds,
     link: "https://loomsmonitor.resonent.com/", // Replace with your project URL
   },

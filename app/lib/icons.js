@@ -16,6 +16,7 @@ export const icons = {
     qms:mediaProjectPath+'qms.png',
     resonent:mediaProjectPath+'resonent.jpg',
     portfolio:mediaProjectPath+'portfolio.jpg',
+    medikosh:mediaProjectPath+'medikosh.jpg',
     
     //blogs
     ai:mediaBlogPath+'ai.png',
