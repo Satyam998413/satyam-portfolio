@@ -3,7 +3,7 @@ import { icons } from "./icons";
 export const personalDetails = {
   name: "Satyam Baranwal",
   title: " Software Engineer",
-  description: ` Full Stack Developer with 3.5+ years of experience in building
+  description: ` Full Stack Developer with 4+ years of experience in building
             scalable web applications using the MERN stack. Specialized in IoT
             integrations, real-time data processing with MQTT, and developing
             SaaS platforms. Proven track record of delivering high-quality
@@ -110,13 +110,6 @@ export const projects = [
     link: "#", // Replace with your project URL
   },
   {
-    title: "QMS - Queue Management System",
-    description:
-      "Token-based queue system with web dashboard and kiosk support.",
-    image:icons.qms,
-    link: "https://github.com/yourusername/qms-project", // Replace with your project URL
-  },
-  {
     title: "Resonent -Company Landing Page",
     description: "I have created an amazing lanading page for my company.",
     image:icons.resonent,
@@ -135,6 +128,13 @@ export const projects = [
       "This is a portfolio website in Next js technology with SEO (Personal Project).",
     image:icons.portfolio,
     link: "#", // Replace with your project URL
+  },
+   {
+    title: "QMS - Queue Management System",
+    description:
+      "Token-based queue system with web dashboard and kiosk support.",
+    image:icons.qms,
+    link: "https://github.com/yourusername/qms-project", // Replace with your project URL
   },
 ].reverse();
 
