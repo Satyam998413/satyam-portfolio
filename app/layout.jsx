@@ -37,7 +37,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html>
+    <html lang="en"   className="dark"
+                         style={{colorScheme:"dark"}}>
       <body className="bg-black text-white font-sans antialiased">
         <Provider>{children}</Provider>
 
