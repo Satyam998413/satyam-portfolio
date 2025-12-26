@@ -33,18 +33,13 @@ export default function Footer() {
         <p>${form.message}</p>
       </div>
     `;
-  console.log({
-    subject: "New Order / Contact Request",
-    to: socialUrls.gmail,
-    html: htmlContent,
-  })
     try {
       const res = await fetch("api/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          subject: "New Order / Contact Request",
-          to: myEmail,
+          subject: "New Email From Your's Portfolio",
+          to: socialUrls.gmail,
           html: htmlContent,
         }),
       });
