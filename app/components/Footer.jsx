@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { socialUrls } from "../lib/data";
 
+
 export default function Footer() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
@@ -13,14 +14,51 @@ export default function Footer() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e) => {
+ const handleSubmit = async (e) => {
     e.preventDefault();
-    if (form.name && form.email && form.message) {
-      console.log("Form Submitted: ", form);
+  
+    if (!form.name || !form.email || !form.message) {
+      alert("Please fill in all required fields.");
+      return;
+    }
+  
+    const htmlContent = `
+      <div style="font-family: Arial; line-height: 1.6">
+        <h2>New Job request from Your's Portfolio Website</h2>
+        <p><b>Name:</b> ${form.name}</p>
+        <p><b>Email:</b> ${form.email}</p>
+        <p><b>Phone:</b> ${form.phone || "N/A"}</p>
+        <hr/>
+        <p><b>Message:</b></p>
+        <p>${form.message}</p>
+      </div>
+    `;
+  console.log({
+    subject: "New Order / Contact Request",
+    to: socialUrls.gmail,
+    html: htmlContent,
+  })
+    try {
+      const res = await fetch("api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          subject: "New Order / Contact Request",
+          to: myEmail,
+          html: htmlContent,
+        }),
+      });
+  
+      if (!res.ok) throw new Error("Email failed");
+  
       setSubmitted(true);
-      setForm({ name: "", email: "", message: "" });
-    } else {
-      alert("Please fill in all fields.");
+      setTimeout(() => {
+        setForm({ name: "", email: "", phone: "", service: "", message: "" });
+        setSubmitted(false);
+      }, 5000);
+  
+    } catch (err) {
+      alert("Failed to send email");
     }
   };
 
