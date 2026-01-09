@@ -18,6 +18,8 @@ export const icons = {
     portfolio:mediaProjectPath+'portfolio.jpg',
     medikosh: mediaProjectPath + 'medikosh.jpg',
     sneakylinks: mediaProjectPath + 'sneakylinks.png',
+    clean_swap_solutions: mediaProjectPath + 'clean_swap_solutions.png',
+    cremen_eat_street: mediaProjectPath + 'cremen_eat_street.png',
     
     //blogs
     ai:mediaBlogPath+'ai.png',

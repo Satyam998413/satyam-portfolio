@@ -136,6 +136,22 @@ export const projects = [
     image:icons.qms,
     link: "https://github.com/yourusername/qms-project", // Replace with your project URL
   },
+    {
+    title: "Cremen Eat Street Website for a shop",
+    description:
+      "This is basically next js based landing page and get orders on whatsapp and email based.",
+    image:icons.cremen_eat_street,
+    link: "https://cremeneatstreet.shop/", // Replace with your project URL
+  },
+     {
+    title: "Clean Swap Solutions",
+     description:
+      "This is basically next js based landing page for a client to get orders on whatsapp and email based.",
+    image:icons.clean_swap_solutions,
+    link: "https://cleansweepsolution.in/", // Replace with your project URL
+  },
+   
+   
 ].reverse();
 
 export const blogs = [
