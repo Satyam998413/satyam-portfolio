@@ -1,0 +1,93 @@
+
+1: 1st Databse Replica :-//create Folder in C:\ drive
+  //data1>config>mongodb.cfg>
+	 dbPath=C:\data1\db\path
+	logPath=C:\data1\log\mongod.log
+	port=27020
+
+  //data1>db 
+  //data1>log>mongodb.log
+
+2: 2nd Database Replica://create Folder in C:\ drive
+  //data2>config>mongodb.cfg>
+	 dbPath=C:\data2\db\path
+	logPath=C:\data2\log\mongod.log
+	port=27021
+
+  //data2>db 
+  //data2>log>mongodb.log
+
+3: Fire Cmd as adminstrator
+>>cd C:\Program Files\MongoDB\Server\7.0\bin
+mongod --dbpath "C:\Program Files\MongoDB\Server\7.0\data" --logpath "C:\Program Files\MongoDB\Server\7.0\log\mongod.log" --port 27017 --storageEngine=wiredTiger --replSet ResonentDB --bind_ip_all
+>>mongod --dbpath "C:\data1\db" --logpath "C:\data1\log\mongod.log" --port 27020 --storageEngine=wiredTiger --replSet ResonentDB --bind_ip_all
+>>mongod --dbpath "C:\data1\db" --logpath "C:\data1\log\mongod.log" --port 27020 --storageEngine=wiredTiger --replSet ResonentDB --bind_ip_all
+
+4: Fire Cmd as adminstrator
+>>cd C:\Program Files\MongoDB\Server\7.0\bin
+>>mongod --dbpath "C:\data2\db" --logpath "C:\data2\log\mongod.log" --port 27021 --storageEngine=wiredTiger --replSet ResonentDB
+
+5:mongosh --port 27017
+	//config mongodb
+	config={_id:"ResonentDB",members:[{_id:0,host:"192.168.2.153:27020"},{_id:2,host:"192.168.2.153:27021"}]}
+
+	//replicaset initiate
+	rs.initiate(config)
+	//to check all status then access secodary to primary
+	rs.status()
+
+	//show databse
+	show dbs
+
+	//create a new database
+	use youtube
+
+	//insert data
+	db.student.insert({name:"Kailash Joshi"})
+
+	//
+	db.student.find()
+
+6: New Cmd for secondary server //secondary db one readable not write
+	mongosh --port 27020
+	rs.slaveOk() \\ rs.secondaryOk()
+	show dbs
+
+//if shut down any primary server then any other secondary work as a primary
+
+7: Intall as a service all MongoDB Replica
+
+>>cd C:\Program Files\MongoDB\Server\7.0\bin
+
+>>mongod --install --serviceName "MongoDB_ResonentDB27017" --serviceDisplayName "MongoDB_ResonentDB27017" --dbpath "C:\Program Files\MongoDB\Server\7.0\data" --logpath "C:\Program Files\MongoDB\Server\7.0\log\mongod.log" --port 27017 --storageEngine=wiredTiger --replSet ResonentDB --bind_ip_all
+
+>>mongod --install --serviceName "MongoDB_ResonentDB27020" --serviceDisplayName "MongoDB_ResonentDB27020" --dbpath "C:\data1\db" --logpath "C:\data1\log\mongod.log" --port 27020 --storageEngine=wiredTiger --replSet ResonentDB --bind_ip_all
+
+mongod --install --serviceName "MongoDB_ResonentDB27021" --serviceDisplayName "MongoDB_ResonentDB27021" --dbpath "C:\data2\db" --logpath "C:\data2\log\mongod.log" --port 27021 --storageEngine=wiredTiger --replSet ResonentDB --bind_ip_all
+
+
+>>net start MongoDB_ResonentDB27017
+
+>>net start MongoDB_ResonentDB27020
+
+>>net start MongoDB_ResonentDB27021
+
+>>net stop MongoDB_ResonentDB27017
+
+>>net stop MongoDB_ResonentDB27020
+
+>>net stop MongoDB_ResonentDB27021
+
+>>sc delete MongoDB_ResonentDB27017
+
+>>sc delete MongoDB_ResonentDB27020
+
+>>sc delete MongoDB_ResonentDB27021
+
+
+
+
+
+
+
+

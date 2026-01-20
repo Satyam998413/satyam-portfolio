@@ -1,0 +1,59 @@
+Feb
+45000
+-15000 Papa
+-17000 Credit Card
+-30000 Home Renovation
+-5000 Personal Spent
+-1000 SIP
+
+Total -23000
+
+Mar
+45000
+-23000 Previous month
+-4500 EMI Washing Machine
+-15000 Papa
+-5000 Personal Spent
+-1500 light bill
+-1000 SIP
+Total -4000
+
+Apr 
+45000
+-4000 Previous Month 
+-15000 Papa 
+-4500 EMI
+-5000 Personal Spent
+-1000 SIP
+
+Total 15500
+Saving 10000 Rs
+
+May
+45000
+-15000 Papa
+-5000 Personal Spent
+-3000 Home LightBill & Rice
+-1000 SIP
+-1000 For Party
+
+Total 18000 Rs
+Saving 10000 Rs
+
+Jun
+45000
+-15000 Papa
+-5000 Personal Spent
+-1000 SIP
+
+Total 24000 Rs
+Saving 20000 Rs
+
+July Saving 20000 Rs
+Aug Saving 20000 Rs
+Sep Saving 20000 Rs
+Oct Saving 20000 Rs
+Nov Saving 20000 Rs
+Dec Saving 30000 Rs
+
+ Total Saving 170000 Rs

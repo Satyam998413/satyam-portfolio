@@ -1,0 +1,8 @@
+username: satyambaranwalme998413@gmail.com
+pass:Satyam@5809
+
+
+username:Satyam998413
+pass:Baranwal@123
+
+https://443999078116.signin.aws.amazon.com/console
