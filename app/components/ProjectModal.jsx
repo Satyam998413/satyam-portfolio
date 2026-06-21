@@ -15,7 +15,7 @@ export default function ProjectModal({ isOpen, onClose, project }) {
       >
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-xl font-bold text-gray-600 hover:text-black"
+          className="absolute top-4 right-4 text-sm border-2 rounded-sm bg-white px-2 py-1 font-bold text-gray-600 hover:text-black"
         >
           ✕
         </button>
@@ -25,7 +25,7 @@ export default function ProjectModal({ isOpen, onClose, project }) {
           className="w-full h-56 object-cover rounded-md mb-4"
         />
         <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-        <p className="text-gray-700 mb-4">{project.description}</p>
+        <p className="text-gray-700 mb-4 overflow-y-auto h-[40vh]">{project.description}</p>
         <a
           href={project.link}
           target="_blank"

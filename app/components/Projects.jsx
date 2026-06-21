@@ -28,7 +28,7 @@ export default function Projects() {
             />
             <div className="p-4">
               <h3 className="text-xl font-semibold">{project.title}</h3>
-              <p className="text-gray-300 mt-2">{project.description}</p>
+              <p className="text-gray-300 mt-2">{project.description.split(" ").slice(0, 20).join(" ")}...</p>
             </div>
           </motion.div>
         ))}

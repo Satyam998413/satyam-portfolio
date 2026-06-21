@@ -20,9 +20,11 @@ export const icons = {
     sneakylinks: mediaProjectPath + 'sneakylinks.png',
     clean_swap_solutions: mediaProjectPath + 'clean_swap_solutions.png',
     cremen_eat_street: mediaProjectPath + 'cremen_eat_street.png',
+    ai_job_applier: mediaProjectPath + 'ai_job_applier.png',
     
     //blogs
     ai:mediaBlogPath+'ai.png',
+    ai_improvements:mediaBlogPath+'ai_improvements.png',
     aws_cloud: mediaBlogPath + 'aws-cloud.png',
     deploying: mediaBlogPath + 'deploying.png',
     docker: mediaBlogPath + 'docker.png',

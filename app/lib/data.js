@@ -3,34 +3,34 @@ import { icons } from "./icons";
 export const personalDetails = {
   name: "Satyam Baranwal",
   title: " Software Engineer",
-  description: ` Full Stack Developer with 4+ years of experience in building
-            scalable web applications using the MERN stack. Specialized in IoT
-            integrations, real-time data processing with MQTT, and developing
-            SaaS platforms. Proven track record of delivering high-quality
-            solutions in fast-paced environments. Open to opportunities in
-            Remote or Hybrid roles.”`,
+  description: `Full Stack Developer with 4+ years of experience building scalable, high-performance web applications using the MERN stack and Next.js. Specialized in AI-powered SaaS platforms, IoT integrations, real-time data processing with MQTT, and workflow automation. Experienced in developing multi-LLM applications, RAG systems, vector databases, and cloud-integrated solutions. Proven track record of delivering production-ready solutions in fast-paced environments. Open to Remote and Hybrid opportunities.`,
 };
 
 export const skills = [
-  { name: "AI (ChatGpt , Github Copilot , Cursor Agentic AI)", level: 80 },
+  {
+    name: "AI (ChatGpt , Github Copilot , Cursor Agentic AI ,Claude )",
+    level: 80,
+  },
+  { name: "AI, LLM Integrations & RAG AI ", level: 60 },
   { name: "React", level: 80 },
   { name: "Node.js", level: 80 },
   { name: "MongoDB", level: 80 },
+    { name: "PostgreSQL", level: 80 },
   { name: "Express.js", level: 80 },
   { name: "Javascript", level: 80 },
   { name: "Tailwind CSS", level: 80 },
-  { name: "Next.js", level: 60 },
+  { name: "Next.js", level: 70 },
   { name: "HTML5", level: 90 },
   { name: "CSS3", level: 90 },
   { name: "JQuery", level: 90 },
   { name: "REST API", level: 90 },
-  { name: "MQTT", level: 90 },
+  { name: "MQTT , Websocket , SocketIO", level: 90 },
   { name: "Git", level: 90 },
   { name: "Docker", level: 70 },
   { name: "AWS (EC2, S3 bucket, Load Balancer)", level: 60 },
   { name: "CI-CD Pipeline (Vercel, GitLab with Agile Method)", level: 70 },
-  { name: "Python", level: 70 },
-  { name: "Django", level: 70 },
+  { name: "Python", level: 60 },
+  { name: "Django", level: 60 },
 ];
 
 export const interests = ["Chess", "Video Game", "Carrom"];
@@ -66,92 +66,109 @@ export const educations = [
 export const projects = [
   {
     title: "Cremen-Engineers E-Commerce Website (Python & Django Based)",
-    description: "Real-time e-commerce website for blogs upload , game templates upload , courses sale & for my personal use.",
-    image:icons.resonent,
+    description:
+      "Real-time e-commerce website for blogs upload , game templates upload , courses sale & for my personal use.",
+    image: icons.resonent,
     link: "#", // Replace with your project URL
   },
   {
     title: "Medikosh E-Commerce Website-(FreeLancing Work For Client)",
-    description: "Real-time e-commerce website for medicine and more products sales like that amazon & flipkart (As BackEnd Developer with my team).",
-    image:icons.medikosh,
+    description:
+      "Real-time e-commerce website for medicine and more products sales like that amazon & flipkart (As BackEnd Developer with my team).",
+    image: icons.medikosh,
     link: "https://www.medikosh.com/", // Replace with your project URL
   },
 
   {
     title: "SneakyLinks Dating Website-(FreeLancing Work For US Client)",
-    description: "Real-time dating website for two person communication (As BackEnd Developer with my team).",
-    image:icons.sneakylinks,
+    description:
+      "Real-time dating website for two person communication (As BackEnd Developer with my team).",
+    image: icons.sneakylinks,
     link: "https://www.sneakylinks.com/", // Replace with your project URL
   },
 
   {
     title: "LMS - Loom Monitoring System",
-    description: "Real-time monitoring system for looms (JCard Machines) using IoT and MQTT.",
-    image:icons.lms,
+    description:
+      "Real-time monitoring system for looms (JCard Machines) using IoT and MQTT.",
+    image: icons.lms,
     link: "https://loomsmonitor.resonent.com/", // Replace with your project URL
   },
   {
     title: "WDS - Weaving Data-Logger System",
-    description: "Real-time monitoring system for any machine which is working (based on RPM production) using IoT and MQTT.",
-    image:icons.wds,
+    description:
+      "Real-time monitoring system for any machine which is working (based on RPM production) using IoT and MQTT.",
+    image: icons.wds,
     link: "https://loomsmonitor.resonent.com/", // Replace with your project URL
   },
   {
     title: "NCS - Nurse Calling System",
     description: "BLE-based emergency and nurse call management for hospitals.",
-    image:icons.ncs,
+    image: icons.ncs,
     link: "#", // Replace with your project URL
   },
   {
     title: "ELS - Electronic Label System",
     description:
       "Digital tag management for stock and material flow in stores.",
-    image:icons.els,
+    image: icons.els,
     link: "#", // Replace with your project URL
   },
   {
     title: "Resonent -Company Landing Page",
     description: "I have created an amazing lanading page for my company.",
-    image:icons.resonent,
+    image: icons.resonent,
     link: "https://resonent.com", // Replace with your project URL
   },
   {
     title: "Riser -BackEnd & Desktop Application",
     description:
       "This is a dashboard system which is managed big coolers and heat exhausted system.",
-    image:icons.riser,
+    image: icons.riser,
     link: "#", // Replace with your project URL
   },
   {
     title: "My Portfolio Website -  Based on Next js",
     description:
       "This is a portfolio website in Next js technology with SEO (Personal Project).",
-    image:icons.portfolio,
+    image: icons.portfolio,
     link: "#", // Replace with your project URL
   },
-   {
+  {
     title: "QMS - Queue Management System",
     description:
       "Token-based queue system with web dashboard and kiosk support.",
-    image:icons.qms,
+    image: icons.qms,
     link: "https://github.com/yourusername/qms-project", // Replace with your project URL
   },
-    {
+  {
     title: "Cremen Eat Street Website for a shop",
     description:
       "This is basically next js based landing page and get orders on whatsapp and email based.",
-    image:icons.cremen_eat_street,
+    image: icons.cremen_eat_street,
     link: "https://cremeneatstreet.shop/", // Replace with your project URL
   },
-     {
+  {
     title: "Clean Swap Solutions",
-     description:
+    description:
       "This is basically next js based landing page for a client to get orders on whatsapp and email based.",
-    image:icons.clean_swap_solutions,
+    image: icons.clean_swap_solutions,
     link: "https://cleansweepsolution.in/", // Replace with your project URL
   },
-   
-   
+  {
+    title: "Total Agents (US Real Estate AI Platform)",
+    description:
+      "An enterprise-grade AI-powered Real Estate Automation Platform built with Next.js for US-based real estate businesses. The platform leverages multiple LLMs, RAG architecture, and Vector Databases to deliver intelligent, context-aware automation and customer engagement.\n\nKey Features:\n• Multi-LLM architecture integrating OpenAI, Gemini, Groq, and other AI models\n• RAG (Retrieval-Augmented Generation) system with Vector Database for contextual and domain-specific responses\n• Built with Next.js, Supabase, and PostgreSQL for a scalable and secure full-stack architecture\n• AI-powered CRM for managing leads, clients, and communication workflows\n• Automated email generation and communication pipelines based on user interactions and business events\n• Google Calendar and email integrations using Nylas for scheduling, reminders, and communication management\n• AI voice capabilities powered by ElevenLabs for voice interactions and automated client communications\n• Automatic recording of client conversations with AI-generated transcripts, summaries, and actionable insights\n• User-controlled automation workflows with configurable actions and scheduler-based execution\n• Subscription management and billing system powered by Stripe\n• Intelligent learning from user interactions to provide personalized recommendations and workflow optimizations\n• Real estate market intelligence with location-based news aggregation, market trends, and investment suggestions\n• Fully managed, scalable, and secure SaaS platform designed to automate end-to-end real estate operations and enhance customer engagement.",
+    image:icons.ai_improvements,
+    link: "#",
+  },
+  {
+    title: "AI Auto Job Applier",
+    description:
+      "An advanced AI-powered job application platform built with Next.js that automates the entire job search and application process. The platform integrates multiple AI models, including OpenAI, Gemini, and Groq, to provide intelligent career assistance and personalized job recommendations.\n\nKey Features:\n• ATS Resume Analysis and Scoring\n• AI-Powered Resume Generation tailored to Job Descriptions (JD)\n• Automatic extraction of HR emails from job descriptions and company pages\n• AI-generated personalized cover letters for every application\n• One-click email generation and automated application submission\n• Smart job recommendations based on user profile, skills, and career goals\n• Daily automated job applications with support for sending up to 50 applications automatically\n• Career guidance and profile improvement suggestions\n• AI-based live video mock interviews with real-time feedback\n• Interview question generation based on target roles and technologies\n• First-impression analysis using video, including communication, confidence, and presentation feedback\n• End-to-end automation from resume screening to interview preparation\n\nThis project demonstrates the practical implementation of Generative AI, workflow automation, and modern full-stack development using Next.js to create an intelligent career assistant and job application ecosystem.",
+    image: icons.ai_job_applier,
+    link: "https://ai-job-applier-rho.vercel.app/",
+  },
 ].reverse();
 
 export const blogs = [
@@ -219,6 +236,15 @@ export const blogs = [
     date: "March 1, 2025",
     time: "1:00 PM",
   },
+  {
+slug: "ai-powered-coding-and-rag-systems-in-2026",
+title: "AI-Powered Coding and RAG Systems in 2026",
+description:
+"Explore how AI coding assistants, Multi-LLM architectures, Retrieval-Augmented Generation (RAG), and Vector Databases are revolutionizing software development in 2026. Learn how developers are leveraging AI-powered code generation, intelligent debugging, contextual code retrieval, automated testing, and workflow automation to build scalable, production-ready applications faster than ever.",
+image: icons.ai_improvements,
+date: "May 31, 2026",
+time: "6:00 PM",
+}
 ].reverse();
 
 export const socialUrls = {
