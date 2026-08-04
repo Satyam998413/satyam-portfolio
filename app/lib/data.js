@@ -2,8 +2,8 @@ import { icons } from "./icons";
 
 export const personalDetails = {
   name: "Satyam Baranwal",
-  title: " Software Engineer",
-  description: `Full Stack Developer with 4+ years of experience building scalable, high-performance web applications using the MERN stack and Next.js. Specialized in AI-powered SaaS platforms, IoT integrations, real-time data processing with MQTT, and workflow automation. Experienced in developing multi-LLM applications, RAG systems, vector databases, and cloud-integrated solutions. Proven track record of delivering production-ready solutions in fast-paced environments. Open to Remote and Hybrid opportunities.`,
+  title: "Software Engineer",
+  description: `Full Stack & Mobile Engineer with 4+ years of experience building scalable, high-performance web and mobile applications. Specialized in MERN, Next.js, and Flutter/Dart, with expertise in AI-powered SaaS platforms, RAG systems, multi-LLM integrations, and agentic AI workflows. Proven track record in real-time IoT data processing (MQTT, WebSockets), robust database architectures (PostgreSQL, MongoDB), and cloud/DevOps deployments (AWS, Docker, CI/CD). Open to Remote and Hybrid opportunities.`,
 };
 
 export const skills = [
